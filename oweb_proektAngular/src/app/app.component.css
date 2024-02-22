@@ -1,0 +1,79 @@
+#ponudi{
+  font-family: roboto,sans-serif;
+  margin-top: 60px;
+}
+h1{
+  color: #39393b;
+  font-weight: bold;
+  margin: 10px;
+}
+h3{
+  color:rgb(249, 146, 1);
+  font-size: xx-large;
+  margin-left: 10px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  color: #39393b;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: white;
+}
+.card:hover{
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.07); 
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin-bottom: 5px;
+}
+  #container{
+    margin-top: 60px;
+    margin-left: 30px;
+    font-family: roboto,sans-serif;
+    display: flex;
+    align-items: center;
+    color: #39393b;
+
+}
+.imgage {
+    float: left;
+  }
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+    float: left;}
+    .card button {
+      border: none;
+      outline: 0;
+      background-color: #ffffff;
+      text-align: right;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 10px;
+    }

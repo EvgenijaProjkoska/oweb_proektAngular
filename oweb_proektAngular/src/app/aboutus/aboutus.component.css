@@ -1,0 +1,35 @@
+#container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../../assets/img.png);
+    background-size:cover;
+    height: 400px;
+    margin-top: 50px;
+    font-family: roboto,sans-serif;
+    color:white;
+    border-radius: 4px;
+  }
+#content{
+    margin-left: 120px;
+    margin-right: 150px;
+    margin-top: 70px;
+}
+h1{
+    padding-top: 60px;
+    color:rgb(249, 146, 1);
+    font-size: 35px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+  }
+p{
+    font-size: medium;
+    padding-left: 40px;
+    line-height: 1.4;
+}
+h2{
+    padding-left: 40px;
+    font-size: medium;
+}

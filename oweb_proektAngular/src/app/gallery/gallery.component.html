@@ -1,0 +1,47 @@
+
+<h1>ГАЛЕРИЈА</h1>
+<div id="gallery">
+<hr>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/10/0f/41/ff.jpg" style="width:100%">
+      <div class="text">Рим, Италија</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="https://cdn.thecrazytourist.com/wp-content/uploads/2020/03/ccimage-shutterstock_1048935941.jpg" style="width:100%">
+      <div class="text">Санторини, Грција</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?cs=srgb&dl=pexels-oleksandr-p-3278215.jpg&fm=jpg" style="width:100%">
+      <div class="text">Кападокија, Турција</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="https://www.travelandleisure.com/thmb/2TuDLUSWzlnexDVxuLUtMhr3Hfg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/santanyi-mallorca-beach-MALLORCALOCAL0522-83d2d5c38fc6446292d0360a105e2f27.jpg" style="width:100%">
+        <div class="text">Мајорка, Шпанија</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f9/47/0a/caption.jpg?w=1200&h=-1&s=1" style="width:100%">
+        <div class="text">Виена, Австрија</div>
+      </div>
+  
+  
+    <a class="prev" (click)="plusSlides(-1)">❮</a>
+    <a class="next" (click)="plusSlides(1)">❯</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" (click)="currentSlide(1)"></span> 
+    <span class="dot" (click)="currentSlide(2)"></span> 
+    <span class="dot" (click)="currentSlide(3)"></span> 
+    <span class="dot" (click)="currentSlide(4)"></span> 
+    <span class="dot" (click)="currentSlide(5)"></span> 
+  </div>
+</div>

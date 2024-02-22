@@ -1,0 +1,15 @@
+<div id="login">
+    <div class="modal-content">
+      <form>
+        <h3>Најава за корисници</h3>
+        <label>Корисничко име</label>
+        <input type="text" [(ngModel)]="usr" [ngModelOptions]="{standalone: true}">
+        <label>Лозинка</label>
+        <input type="password" [(ngModel)]="pass" [ngModelOptions]="{standalone: true}">
+        <button type="submit" (click)="loginfunction()">Најави се</button>
+          </form>
+    </div>
+</div>
+
+
+    

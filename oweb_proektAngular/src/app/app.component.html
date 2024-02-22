@@ -1,0 +1,65 @@
+<div>
+  <app-navbar (signinclicked)="signupshowfunction()"></app-navbar>
+  <app-login *ngIf="signupshow" (login)="trylogin($event)"></app-login>
+  <app-searchbar></app-searchbar>
+  <div id="ponudi">
+    <h1>ПОНУДИ</h1><hr>
+    <h3 id="veligden">Велигденски патувања</h3>
+    <div class="container">
+      <div class="card" *ngFor="let item of filteredPonuda1">
+        <div class="card-image">
+          <img src="{{ item.photo }}" alt="{{ item.destination }}">
+        </div>
+        <div class="card-body">
+          <h2>{{ item.destination }}</h2>
+          <p>{{ item.description }}</p>
+          <p>цени од: {{ item.price }}€</p>
+          <p>{{ item.days }} денови</p>
+          <button><img src="../assets/favoriteoff.png" (click)="addtofavorites($event)"></button>
+        </div>
+      </div>
+    </div>
+    <h3 id="mart">8ми Март</h3>
+    <div class="container">
+      <div class="card" *ngFor="let item of filteredPonuda2">
+        <div class="card-image">
+          <img src="{{ item.photo }}" alt="{{ item.destination }}">
+        </div>
+        <div class="card-body">
+          <h2>{{ item.destination }}</h2>
+          <p>{{ item.description }}</p>
+          <p>цени од: {{ item.price }}€</p>
+          <p>{{ item.days }} денови</p>
+          <button><img src="../assets/favoriteoff.png" (click)="addtofavorites($event)"></button>
+        </div>
+      </div>
+    </div>
+    <h3 id="leto">Лето 2024</h3>
+    <div class="container">
+      <div class="card" *ngFor="let item of filteredPonuda3">
+        <div class="card-image">
+          <img src="{{ item.photo }}" alt="{{ item.destination }}">
+        </div>
+        <div class="card-body">
+          <h2>{{ item.destination }}</h2>
+          <p>{{ item.description }}</p>
+          <p>цени од: {{ item.price }}€</p>
+          <p>{{ item.days }} денови</p>
+          <button><img src="../assets/favoriteoff.png" (click)="addtofavorites($event)"></button>
+        </div>
+      </div>
+  </div>
+    </div>
+  <app-contact id="contact"></app-contact>
+  <app-gallery id="gallery"></app-gallery>
+  <app-aboutus></app-aboutus>
+  <div id="container">
+    <div class="image">
+        <img src="https://jk.mk/wp-content/uploads/2023/08/headphone-1.svg">
+      </div>
+      <div class="text">
+        <p>Контактирајте не на <span style="color:rgb(249, 146, 1)">+389 76 288 012</span> </p>
+      </div>
+</div>
+  <app-info id="info"></app-info>
+</div>
